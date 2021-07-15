@@ -10,13 +10,29 @@ const routes = [
     name: 'Home',
     component: Home
   },
- 
+   /*{
+    path: '/home/:id',
+    name: 'Home',
+    component: ()=> import('../views/Home.vue')
+  },*/
+  {
+    path: '/agrupa-mes/:id',
+    name: 'AgrupaMes',
+    component: () => import('../views/AgrupaMes.vue')
+  },
+  
   
   {
     path: '/detalle/:id',
     name: 'Detalle',
     component: () => import('../views/Detalle.vue')
+  },
+  {
+    path: '/agrupados/',
+    name: 'agrupados',
+    component: () => import('../views/agrupados.vue')
   }
+
 ]
 
 const router = new VueRouter({

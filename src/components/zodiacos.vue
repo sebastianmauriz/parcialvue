@@ -6,17 +6,17 @@
       class="mb-2"
     >
        <b-card-img
-        :src="zodiacoParam.imagen"
+        :src="propiedadZodiaco.imagen"
         alt="Image"
          
         style="min-height: 200px; max-height: 200px"
       ></b-card-img> 
-      <b-card-title :title="zodiacoParam.signo"></b-card-title>
+      <b-card-title :title="propiedadZodiaco.signo"></b-card-title>
          
 
       <div style="text-align: center">
         <b-button
-          :href="'/detalle/' + zodiacoParam.id"
+          :href="'/detalle/' + propiedadZodiaco.id"
           variant="primary"
           style="width: 100%"
         >
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  props: ["zodiacoParam"],
+  props: ["propiedadZodiaco"],
 };
 </script>
 
